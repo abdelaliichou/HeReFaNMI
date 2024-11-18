@@ -1,8 +1,8 @@
 # Running the complete application ( Front + Back) :
 
-git clone https://github.com/abdelaliichou/HeReFaNMI.git
-cd HeReFaNMI
-docker compose up --build
+1. git clone https://github.com/abdelaliichou/HeReFaNMI.git
+2. cd HeReFaNMI
+3. docker compose up --build
 
 
 # Overview
@@ -31,11 +31,11 @@ Feel free to check the CSS file and structure of components for better understad
 
 # Running only the Front-end :
 
-git clone https://github.com/abdelaliichou/HeReFaNMI.git
-cd HeReFaNMI
-cd Frontend
-docker build -t frontend .
-docker run -p 3000:3000 frontend
+1. git clone https://github.com/abdelaliichou/HeReFaNMI.git
+2. cd HeReFaNMI
+3. cd Frontend
+4. docker build -t frontend .
+5. docker run -p 3000:3000 frontend
 
 ### Access the Application :
 
@@ -45,9 +45,9 @@ Local Access in the browser: http://127.0.0.1:3000
 
 # Running only the Back-end :
 
-git clone https://github.com/abdelaliichou/HeReFaNMI.git
-cd HeReFaNMI
-cd Backend
+1. git clone https://github.com/abdelaliichou/HeReFaNMI.git
+2. cd HeReFaNMI
+3. cd Backend
 
 ### Configure Environment Variables :
 
@@ -59,8 +59,8 @@ Create a .env file in the root directory and add your API keys and other environ
 
 ### Build and Run the Docker Container :
 
-docker build -t backend .
-docker run --env-file .env -p 10000:10000 backend
+1. docker build -t backend .
+2. docker run --env-file .env -p 10000:10000 backend
 
 ### Access the Application :
 
