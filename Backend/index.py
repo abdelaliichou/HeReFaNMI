@@ -17,10 +17,10 @@ client = OpenAI( api_key = os.getenv('API_KEY') )
 
 
 # loading our firebase keys
-Firebase_KEY = credentials.Certificate("first-firebase-7e1ee-firebase-adminsdk-qbinv-48afa71695.json")
+Firebase_KEY = credentials.Certificate(os.getenv('FIREBASE_KEY'))
 firebase_admin.initialize_app(
     Firebase_KEY,{
- "databaseURL": "https://first-firebase-7e1ee-default-rtdb.firebaseio.com"
+ "databaseURL": os.getenv('DATABASE_URL')
 })
 
 
